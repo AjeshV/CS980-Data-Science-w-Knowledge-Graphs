@@ -100,7 +100,7 @@ public class customSearch {
             final MyQueryBuilder queryBuilder2 = new MyQueryBuilder(new StandardAnalyzer());
 
             final String pagesFile2 = args[0];
-            PrintWriter out2 = new PrintWriter(new FileWriter(args[3]));
+            PrintWriter out2 = new PrintWriter(new FileWriter(args[2]));
             final FileInputStream fileInputStream4 = new FileInputStream(new File(pagesFile2));
             for (Data.Page page : DeserializeData.iterableAnnotations(fileInputStream4)) {
                 final String queryId = page.getPageId();
@@ -109,13 +109,16 @@ public class customSearch {
 
                 TopDocs tops = searcher2.search(queryBuilder2.toQuery(queryStr), 100);
                 ScoreDoc[] scoreDoc = tops.scoreDocs;
+                String paragraphid2 = null;
                 for (int i = 0; i < scoreDoc.length; i++) {
                     ScoreDoc score = scoreDoc[i];
                     final Document doc = searcher2.doc(score.doc); // to access stored content
                     final String paragraphid = doc.getField("paragraphid").stringValue();
                     final float searchScore = score.score;
                     final int searchRank = i+1;
-                    out2.println(queryId+" Q0 "+paragraphid+" "+searchRank + " "+searchScore+" Lucene-BM25");
+					if (paragraphid != paragraphid2)
+                    	out2.println(queryId+" Q0 "+paragraphid+" "+searchRank + " "+searchScore+" Lucene-BM25");
+					paragraphid2 = paragraphid;
                 }
             }
             out2.close();
