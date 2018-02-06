@@ -26,6 +26,7 @@ public class customIndex
         System.setProperty("file.encoding", "UTF-8");       
         if (args.length != 2){
         	System.out.println("Format: Paragraphscborfile Pathtoluceneindex");
+            System.exit(-1);
         }
            
         final String paragraphsFile = args[0];
