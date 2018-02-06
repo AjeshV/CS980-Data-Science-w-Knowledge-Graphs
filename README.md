@@ -26,8 +26,8 @@ java -jar searchandIndexing-0.0.1-SNAPSHOT.jar <inputfiles>
 Input file format for Indexing and search: 
 
 ```
-Paragraphscborfile Pathtoluceneindex
-Outlinescborfile IndexPath Pagesoutput Sectionsoutput
+<Paragraphscborfile> <Pathtoluceneindex>
+<Outlinescborfile> <IndexPath> <Pagesoutput> <Sectionsoutput>
 ```
 
 From IDE (ex: Eclipse) code can be run by providing input files as arguments.
