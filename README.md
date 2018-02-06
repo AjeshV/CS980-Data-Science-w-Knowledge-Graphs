@@ -2,28 +2,28 @@
 CS980.01 Adv Top/ Data Science with Knowledge Graphs, Assignment1:
 
 # Installation Instructions 
-## Download as a .zip file or clone repository:
+### Download as a .zip file or clone repository:
 ```
 git clone https://github.com/AjeshV/Lucene-search-and-indexing.git
 ```
 
-## Input files are at:
+###  Input files are at:
 
 ```
 http://trec-car.cs.unh.edu/datareleases/
 ```
 
-## From pom.xml directory, type:
+###  From pom.xml directory, type:
 ```
 mvn package
 ```
 
-## Type the below command to execute code:
+###  Type the below command to execute code:
 ```
 java -jar searchandIndexing-0.0.1-SNAPSHOT.jar <inputfiles>
 ```
 
-## Input file format for Indexing and search: 
+###  Input file format for Indexing and search: 
 
 ```
 <Paragraphscborfile> <Pathtoluceneindex>
