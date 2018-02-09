@@ -30,4 +30,4 @@ java -jar searchandIndexing-0.0.1-SNAPSHOT.jar <inputfiles>
 <Outlinescborfile> <IndexPath> <Pagesoutput> <Sectionsoutput>
 ```
 
-From IDE (ex: Eclipse) code can be run by providing input files as arguments.
+From IDE (ex: Eclipse) code can be run by providing input files as arguments at build configuration.
