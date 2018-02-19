@@ -120,13 +120,8 @@ public class PageRank {
             //for (int j = 0; j < 2; j++) {
             	/*List<String> value1 = new ArrayList<String>();
             	
-            	//value1 = values of given key k from hashmap;
             	value1 = hashMap.get(k);
             	System.out.println(value1);            	           	
-            	//value2 = values of value1 as keys from map;
-            	//value2 = 
-            	//value3 = (sum of number of values for each value1 as keys from hashmap);
-            	//value4 = value2/value3;
             	//map.put(k, value4);
             */
             //}
