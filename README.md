@@ -1,5 +1,5 @@
-# Lucene-search-and-indexing
-CS980.01 Adv Top/ Data Science with Knowledge Graphs, Assignment1:
+# Data Science with Knowledge Graphs
+CS980 Data Science with Knowledge Graphs course:
 
 # Installation Instructions 
 ### Download as a .zip file or clone repository:
